@@ -1,0 +1,5 @@
+*.csv
+*.stat
+docker_sql/ny_taxi_postgres/*
+docker_sql/ny_taxi_postgres_data/
+docker_sql/ny_taxi_postgres_data/base
