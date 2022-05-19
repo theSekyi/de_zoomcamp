@@ -46,3 +46,19 @@
 ### Run Ingestion script in docker
 
 `docker run -it --network=pg-network taxi_ingest:v001 --user=root --password=root --host=pg-database --port=5432 --db=ny_taxi --table_name=yellow_taxi_data --url="https://s3.amazonaws.com/nyc-tlc/trip+data/yellow_tripdata_2021-01.csv"`
+
+### Initialize state file (.tfstate)
+
+`terraform init`
+
+### Check changes to new infra plan
+
+`terraform plan -var="project=<your-gcp-project-id>"`
+
+### Create new infra
+
+`terraform apply -var="project=<your-gcp-project-id>"`
+
+### Delete infra after your work, to avoid costs on any running services
+
+`terraform destroy`
