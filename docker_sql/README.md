@@ -14,6 +14,14 @@
 
 `pgcli -h localhost -p 5432 -u root -d ny_taxi`
 
+#### Install PGCLI in vm on gcp
+
+`conda install -c conda-forge pgcli && pip install -U mycli`
+
+#### Use PGCLI in gcp
+
+`pgcli -h localhost -U root -d ny_taxi`
+
 ### Source of Data
 
 `https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page`
