@@ -45,3 +45,5 @@ terraform.rc
 01_docker_sql/ny_taxi_postgres/
 01_docker_sql/ny_taxi_postgres_data/
 02_data_ingestion/airflow/logs/
+
+__pycache__
